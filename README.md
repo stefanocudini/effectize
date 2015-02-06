@@ -1,4 +1,4 @@
 # effectize
 Create Javascript effects without Javascript code
 
-Coming soon
+*Coming soon*
