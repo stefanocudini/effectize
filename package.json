@@ -1,0 +1,26 @@
+{
+  "name": "effectize",
+  "version": "1.0.0",
+  "description": "Create Javascript effects without Javascript code",
+  "main": "effectize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanocudini/effectize.git"
+  },
+  "keywords": [
+    "effects"
+  ],
+  "author": {
+    "name": "Stefano Cudini",
+    "email": "stefano.cudini@gmail.com",
+    "url": "http://labs.easyblog.it/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanocudini/effectize/issues"
+  },
+  "homepage": "https://github.com/stefanocudini/effectize"
+}
