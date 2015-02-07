@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Effectize</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="/js/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<style type="text/css">
+
+/* visual debugging */
+.fz-effectized {
+	box-shadow: 0 0 10px rgba(0,0,200,0.6);
+}
+
+#target-list {
+	border: 1px solid red;
+	min-height: 20px;
+}
+.list-group-item {
+	cursor: pointer
+}
+textarea {
+	font-size: 12px;
+	padding: 10px
+}
+</style>
+<head>
+
+<body>
+
+<div class="container">
+<h2><a href="index.html">Effectize</a> &bull; Simple Example</h2>
+
+<textarea cols="60" rows="10">
+<ul class="list-group fz-element" 
+data-fz-events="click" 
+data-fz-origin=".list-group-item" 
+data-fz-destin="#target-list" 
+data-fz-action="prependTo"
+>
+	<li class="list-group-item">Item A</li>
+	<li class="list-group-item">Item B</li>
+	<li class="list-group-item">Item C</li>
+</ul>
+</textarea>
+
+<hr />
+<em>Click on items</em>
+
+<ul class="list-group fz-element" 
+data-fz-events="click" 
+data-fz-origin=".list-group-item" 
+data-fz-destin="#target-list" 
+data-fz-action="appendTo"
+>
+	<li class="list-group-item">Item A</li>
+	<li class="list-group-item">Item B</li>
+	<li class="list-group-item">Item C</li>
+</ul>
+
+<ul class="list-group" id="target-list"><i>target</i>
+<!-- 	<li class="list-group-item">Content A</li>
+	
+	<li class="list-group-item">Content B</li>
+	
+	<li class="list-group-item">Content C</li> -->
+</ul>
+
+</div>
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="effectize.js"></script>
+</body>
+</html>
